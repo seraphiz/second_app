@@ -1,0 +1,24 @@
+<h1>Landing</h1>
+<p>Iterando</p>
+
+<!--En la vista de landing iterar la colección @students y listar -en una tabla- todos los
+estudiantes con su respectivo email.-->
+<table class="table table-active">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |alumno| %>
+      <tr>
+        <td><%= alumno.name %></td>
+
+        <td><%= alumno.email %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
